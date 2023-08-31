@@ -12,6 +12,7 @@ import time
 
 
 
+
 # Set up Chrome options
 chrome_options = Options()
 chrome_options.add_argument("--use-fake-ui-for-media-stream")  # Allow audio capture
@@ -27,7 +28,7 @@ chrome_options.add_experimental_option("prefs", {
 })
 
 # Path to ChromeDriver executable
-chromedriver_path = "./chromedriver.exe"
+chromedriver_path = "C:/Users/User/Desktop/jobmaassistant/Adding-bot/chromedriver.exe"
 
 # Initialize Chrome Service
 chrome_service = Service(executable_path=chromedriver_path)
@@ -89,7 +90,7 @@ def turnOffMicCam():
 
 # Open Google Meet or YouTube video URL
 # url = "https://www.youtube.com/watch?v=VGhw7ps25ig"
-url = "https://meet.google.com/geg-vdrj-xmo"
+url = "https://meet.google.com/ktz-sprh-ezd"
 driver.get(url)
 
 # Wait for the content to load (adjust time as needed)
@@ -133,3 +134,5 @@ with wave.open("recorded_audio.wav", "wb") as wf:
 
 # Clean up and close the browser
 driver.quit()
+
+# http://localhost:5000/start-recording
